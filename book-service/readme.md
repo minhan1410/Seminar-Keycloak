@@ -1,0 +1,3 @@
+# Kết hợp Spring Security 6 và Keycloak
+
+- Dùng Spring security 6 để phân quyền, keycloak để quản lý user, role, client,...

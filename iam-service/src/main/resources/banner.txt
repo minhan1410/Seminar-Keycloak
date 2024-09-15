@@ -1,0 +1,11 @@
+
+
+${AnsiColor.BRIGHT_BLUE} ,--.  ,---.  ,--.   ,--.    ,---. ,------.,------.,--.   ,--.,--. ,-----.,------.
+${AnsiColor.BRIGHT_BLUE} |  | /  O  \ |   `.'   |   '   .-'|  .---'|  .--. '\  `.'  / |  |'  .--./|  .---'
+${AnsiColor.BRIGHT_BLUE} |  ||  .-.  ||  |'.'|  |   `.  `-.|  `--, |  '--'.' \     /  |  ||  |    |  `--,
+${AnsiColor.BRIGHT_BLUE} |  ||  | |  ||  |   |  |   .-'    |  `---.|  |\  \   \   /   |  |'  '--'\|  `---.
+${AnsiColor.BRIGHT_BLUE} `--'`--' `--'`--'   `--'   `-----'`------'`--' '--'   `-'    `--' `-----'`------'
+
+${AnsiColor.BRIGHT_CYAN}  App: ${spring.application.name}                                     ${AnsiColor.BRIGHT_CYAN} Port: ${server.port}
+${AnsiColor.BRIGHT_GREEN}  Spring Boot                                          ${AnsiColor.WHITE} (v${spring-boot.version})
+
