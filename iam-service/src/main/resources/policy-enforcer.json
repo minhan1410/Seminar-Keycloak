@@ -3,7 +3,7 @@
   "auth-server-url": "http://localhost:8181/",
   "resource": "iam-service",
   "credentials": {
-    "secret": "cob788pQWkghmLebR0IJXBhZTFpkbyjx"
+    "secret": "9vDrIsCr9448knN5RYZwGdanDv6XIwg0"
   },
   "paths": [
     {

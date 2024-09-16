@@ -1,5 +1,7 @@
 # Keycloak
 
+## [Nhắc lại kiến thức](./Review_Knowledge.md)
+
 ## Giới thiệu
 
 - Keycloak là một giải pháp mã nguồn mở cho việc quản lý authentication và authorization trong ứng dụng. Nó cho phép xây dựng các chức năng login, logut, quản lý và phân quyển user mà không phải cấu hình từ đầu.
@@ -50,9 +52,30 @@
 
   - **Lưu ý**: Khi bật **Implicit flow** chỉ hỗ trợ SSO cho các client trong cùng realm.
 
-- Oauth2: là protocol được sử dụng để authorization
+- Oauth2: là protocol được sử dụng để authorization, chia sẻ resource giữa các ứng dụng với nhau mà không cần chia sẻ thông tin username, password
 
   - Cấu hình Oauth2 trong **Identity providers**
+
+  - **Google**
+
+    - Trong **Keycloak** chọn tab **Identity Providers** -> **Google** -> Copy giá trị trong ô **Redirect URI**
+
+    - Mở tab mới truy cập vào [console cloud google](https://console.cloud.google.com/)
+
+    - Chọn **APIs & Services** -> **Identifiants** -> **Create Credentials** -> **OAuth client ID** -> **Configure consent screen**
+
+    - Để tạo **OAuth consent screen** làm theo các bước sau: Trong **User Type** ->  **External** -> **Create** -> **Application name** -> **Save x 3 lần**
+
+    - Click tab **Credentials** -> **Create Credentials** -> **OAuth client ID** -> **Web application** -> **Name** -> Paste giá trị đã Copy trong ô **Redirect URI** của **Keycloak** vào **Authorized redirect URIs** -> **Create**
+
+    - Sau khi **create** sẽ có **Client ID** và **Client secret**
+        ![Alt text](./img/image14.png)
+
+    - Quay về tab **Keycloak** và paste vào ô tương ứng -> **Save**
+
+  - **Github**
+
+    - Tương tự với [**Login with Github**](https://github.com/settings/developers) -> **New Auth App** -> **Save**
 
 ### [Thêm user attributes vào JWT](#custom-jwt)
 
